@@ -1,0 +1,307 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header {
+	position: relative;
+	z-index: 1;
+}
+
+.cwhite {
+	color: #fff;
+}
+
+.bgimage {
+	background-image: url(images/mount.jpg);
+	background-position: center;
+	min-height: 650px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.headerbody {
+	border-bottom: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5px 50px 0;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+#sidebar-open {
+	width: 20px;
+	display: none;
+}
+
+.nav div {
+	display: flex;
+	gap: 10px;
+}
+
+.nav a {
+	list-style: none;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.nav a:first-child {
+	color: green;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.logo img {
+	width: 50px;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0;
+	padding-top: 230px;
+}
+
+.bannerbody h1,
+.bannerbody p,
+.bannerbody button {
+	margin: 0 auto;
+}
+
+.bannerbody h1 {
+	font-size: 54px;
+	padding-bottom: 10px;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.paddingbottom button {
+	padding: 8px;
+	width: 120px;
+	border-radius: 50px;
+	background-color: lightgreen;
+	cursor: pointer;
+}
+
+hr {
+	border: 1px solid;
+}
+
+.component1 {
+	background-color: green;
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.commponent1body img {
+	width: 50px;
+}
+
+.commponent1body h2 {
+	font-size: 26px;
+}
+
+.commponent1body p {
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.component3 {
+	background-color: #000;
+}
+
+.row {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.component2body,
+.component3body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	padding: 20px 30px;
+}
+
+.roundimage img {
+	width: 300px;
+	border-radius: 50%;
+}
+
+.component2 h2,
+.component3 h2 {
+	padding-bottom: 5px;
+}
+
+.info1 button {
+	background-color: #fff;
+}
+
+.component4 {
+	background-color: antiquewhite;
+}
+
+.dflex {
+	display: flex;
+}
+
+.body1 {
+	position: relative;
+	display: flex;
+	flex: 33.33%;
+}
+
+.body1 img {
+	width: 100%;
+	max-height: 200px;
+}
+
+.body1 h2 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+.component4 .child {
+	position: absolute;
+	top: 60px;
+	padding-left: 120px;
+}
+
+.child h1 {
+	left: 80px;
+}
+
+.component5 {
+	min-height: 250px;
+	display: flex;
+	align-items: center;
+}
+
+.component5body {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.component5body img {
+	width: 30px;
+}
+
+.component5body h2 {
+	padding-bottom: 5px;
+}
+
+.component6 {
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: green;
+	color: #fff;
+}
+
+.textalignc {
+	text-align: center;
+}
+
+.component6body a {
+	text-decoration: none;
+}
+
+.component6body a:hover {
+	text-decoration: underline;
+}
+
+.component6body img {
+	width: 25px;
+}
+
+footer {
+	padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+
+	.headerbody {
+		background-color: rgba(0, 96, 141, 0.459);
+		border-bottom: none;
+	}
+
+	.bannerbody h1 {
+		padding: 20px 10px 0;
+	}
+
+	.nav div {
+		display: block;
+		position: fixed;
+		top: 58px;
+		left: 0px;
+		background-color: rgba(0, 96, 141, 0.459);
+		min-width: 100%;
+	}
+
+	.nav a {
+		display: block;
+		padding: 5px 50px;
+	}
+
+	.bannerbody h1 {
+		font-size: 40px;
+	}
+
+	.bannerbody p {
+		font-size: 14px;
+	}
+
+	#myLinks {
+		display: none;
+	}
+
+	#sidebar-open {
+		display: block;
+	}
+
+	.fwrap {
+		flex-wrap: wrap;
+	}
+
+	.dflex {
+		display: block;
+	}
+
+	.body1 img {
+		max-height: 700px;
+	}
+
+	.text h2 {
+		top: 45%;
+		left: 43%;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.centertext {
+		text-align: center;
+	}
+}
